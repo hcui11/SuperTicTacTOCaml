@@ -1,0 +1,252 @@
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Runner: sequential
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Chooser: simple
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration suite_name = "search test suite"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration cache_filename = "/Users/harry/CS3110/cs3110-midterm-project/src/_build/oUnit-$(suite_name).cache"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration display = "true"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration results_style_1_X = "false"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration verbose = "false"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration health_check_interval = "1."
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration testdata_dir = "none"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration chooser = "simple"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration output_html_dir = "none"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration processes_kill_period = "5."
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration runner = "sequential"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration shards = "2"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration processes_grace_period = "5."
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration log_encoding = "utf-8"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration output_junit_file = "none"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Configuration output_file = "/Users/harry/CS3110/cs3110-midterm-project/src/_build/oUnit-$(suite_name)-$(shard_id).log"
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:0:index of 0 0.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:0:index of 0 0 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:0:index of 0 0.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:1:index of 8 8.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:1:index of 8 8 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:1:index of 8 8.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:2:index of 4 4.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:2:index of 4 4 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:2:index of 4 4.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:3:index of 8 4.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:3:index of 8 4 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:3:index of 8 4.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:4:index of 6 4.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:4:index of 6 4 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:4:index of 6 4.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:5:index of 7 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:5:index of 7 1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:5:index of 7 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:6:index of 7 7.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:6:index of 7 7 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:6:index of 7 7.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:7:index of 5 2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:7:index of 5 2 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:7:index of 5 2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:8:index of 3 8.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:8:index of 3 8 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:8:index of 3 8.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:9:index of 0 5.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:9:index of 0 5 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:9:index of 0 5.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:10:index of 7 0.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:10:index of 7 0 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:10:index of 7 0.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:11:index of 4 8.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:11:index of 4 8 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:11:index of 4 8.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:12:index of 5 6.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:12:index of 5 6 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:12:index of 5 6.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:13:board of 5 5.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:13:board of 5 5 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:13:board of 5 5.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:14:board of 4 6.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:14:board of 4 6 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:14:board of 4 6.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:15:board of 2 0.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:15:board of 2 0 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:15:board of 2 0.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:16:board of 0 5.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:16:board of 0 5 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:16:board of 0 5.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:17:board of 5 7.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:17:board of 5 7 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:17:board of 5 7.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:18:board of 8 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:18:board of 8 1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:18:board of 8 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:19:board of 4 0.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:19:board of 4 0 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:19:board of 4 0.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:20:board of 7 8.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:20:board of 7 8 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:20:board of 7 8.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:21:board of 6 3.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:21:board of 6 3 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:21:board of 6 3.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:22:checkwin blank.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:22:checkwin blank is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:22:checkwin blank.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:23:checkwin unwonboard1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:23:checkwin unwonboard1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:23:checkwin unwonboard1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:24:checkwin unwonboard2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:24:checkwin unwonboard2 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:24:checkwin unwonboard2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:25:checkwin allX.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:25:checkwin allX is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:25:checkwin allX.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:26:checkwin checkerboard1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:26:checkwin checkerboard1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:26:checkwin checkerboard1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:27:checkwin checkerboard2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:27:checkwin checkerboard2 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:27:checkwin checkerboard2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:28:checkwin unwonfull1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:28:checkwin unwonfull1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:28:checkwin unwonfull1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:29:checkwin unwonfull2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:29:checkwin unwonfull2 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:29:checkwin unwonfull2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:30:checkwin unwon_mixed1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:30:checkwin unwon_mixed1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:30:checkwin unwon_mixed1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:31:checkwin unwon_mixed2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:31:checkwin unwon_mixed2 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:31:checkwin unwon_mixed2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:32:tiebreak unwon_full1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:32:tiebreak unwon_full1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:32:tiebreak unwon_full1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:33:tiebreak unwon_full2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:33:tiebreak unwon_full2 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:33:tiebreak unwon_full2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:34:Empty String Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:34:Empty String Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:34:Empty String Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:35:Blank String Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:35:Blank String Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:35:Blank String Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:36:Mark Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:36:Mark Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:36:Mark Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:37:Quit Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:37:Quit Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:37:Quit Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:38:Help Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:38:Help Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:38:Help Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:39:Restart Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:39:Restart Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:39:Restart Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:40:Invalid Mark Test 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:40:Invalid Mark Test 1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:40:Invalid Mark Test 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:41:Invalid Mark Test 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:41:Invalid Mark Test 1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:41:Invalid Mark Test 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:42:Malformed Mark Test 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:42:Malformed Mark Test 1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:42:Malformed Mark Test 1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:43:Malformed Mark Test 2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:43:Malformed Mark Test 2 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:43:Malformed Mark Test 2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:44:Malformed Quit Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:44:Malformed Quit Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:44:Malformed Quit Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:45:Malformed Help Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:45:Malformed Help Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:45:Malformed Help Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:46:Malformed Restart Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:46:Malformed Restart Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:46:Malformed Restart Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:47:Single String Malformed Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:47:Single String Malformed Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:47:Single String Malformed Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:48:Multiple String Malformed Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:48:Multiple String Malformed Test is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:48:Multiple String Malformed Test.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:49:Empty sets.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:49:Empty sets is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:49:Empty sets.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:50:Left empty.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:50:Left empty is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:50:Left empty.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:51:Right empty.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:51:Right empty is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:51:Right empty.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:52:One element sets.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:52:One element sets is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:52:One element sets.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:53:Mixed1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:53:Mixed1 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:53:Mixed1.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:54:Mixed2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:54:Mixed2 is successful.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:54:Mixed2.
+2018-11-09T00:27:39+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Start test search test suite:55:Testing random vs monte AI.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:55:Testing random vs monte AI is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: End test search test suite:55:Testing random vs monte AI.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: ==============
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Summary:
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:55:Testing random vs monte AI is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:54:Mixed2 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:53:Mixed1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:52:One element sets is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:51:Right empty is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:50:Left empty is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:49:Empty sets is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:48:Multiple String Malformed Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:47:Single String Malformed Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:46:Malformed Restart Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:45:Malformed Help Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:44:Malformed Quit Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:43:Malformed Mark Test 2 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:42:Malformed Mark Test 1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:41:Invalid Mark Test 1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:40:Invalid Mark Test 1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:39:Restart Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:38:Help Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:37:Quit Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:36:Mark Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:35:Blank String Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:34:Empty String Test is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:33:tiebreak unwon_full2 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:32:tiebreak unwon_full1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:31:checkwin unwon_mixed2 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:30:checkwin unwon_mixed1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:29:checkwin unwonfull2 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:28:checkwin unwonfull1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:27:checkwin checkerboard2 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:26:checkwin checkerboard1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:25:checkwin allX is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:24:checkwin unwonboard2 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:23:checkwin unwonboard1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:22:checkwin blank is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:21:board of 6 3 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:20:board of 7 8 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:19:board of 4 0 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:18:board of 8 1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:17:board of 5 7 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:16:board of 0 5 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:15:board of 2 0 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:14:board of 4 6 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:13:board of 5 5 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:12:index of 5 6 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:11:index of 4 8 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:10:index of 7 0 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:9:index of 0 5 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:8:index of 3 8 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:7:index of 5 2 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:6:index of 7 7 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:5:index of 7 1 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:4:index of 6 4 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:3:index of 8 4 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:2:index of 4 4 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:1:index of 8 8 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Test search test suite:0:index of 0 0 is successful.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Ran: 56 tests in: 6.16 seconds.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Cases: 56.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Tried: 56.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Errors: 0.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Failures: 0.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Skip: 0.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Todo: 0.
+2018-11-09T00:27:45+00:00 dhcp-rhodes-774.redrover.cornell.edu#00 I: Timeout: 0.

@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="UI_messages.html">
+<link rel="next" href="RandomAI.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Board" rel="Chapter" href="Board.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="UI_messages" rel="Chapter" href="UI_messages.html">
+<link title="Monte" rel="Chapter" href="Monte.html">
+<link title="RandomAI" rel="Chapter" href="RandomAI.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Score" rel="Chapter" href="Score.html"><title>Monte</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="UI_messages.html" title="UI_messages">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="RandomAI.html" title="RandomAI">Next</a>
+</div>
+<h1>Module <a href="type_Monte.html">Monte</a></h1>
+
+<pre><span id="MODULEMonte"><span class="keyword">module</span> Monte</span>: <code class="code">sig</code> <a href="Monte.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>An implementation of the Monte Carlo tree search algorithm, used for the
+    hard difficulty AI.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="TYPEvisits"><span class="keyword">type</span> <code class="type"></code>visits</span> = <code class="type">float</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The type of a visit counter.</p>
+</div>
+</div>
+
+
+<pre><span id="TYPEwins"><span class="keyword">type</span> <code class="type"></code>wins</span> = <code class="type">float</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The type of a win counter.</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEtree"><span class="keyword">type</span> <code class="type"></code>tree</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtree.Leaf"><span class="constructor">Leaf</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtree.Node"><span class="constructor">Node</span></span> <span class="keyword">of</span> <code class="type"><a href="State.html#TYPEt">State.t</a> * (int * int) * <a href="Monte.html#TYPEvisits">visits</a> Pervasives.ref<br>        * <a href="Monte.html#TYPEwins">wins</a> Pervasives.ref * <a href="Monte.html#TYPEtree">tree</a> * <a href="Monte.html#TYPEtree">tree</a> list Pervasives.ref</code></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>The type of a tree of game states.</p>
+</div>
+</div>
+
+
+<pre><span id="VALcartesian_product"><span class="keyword">val</span> cartesian_product</span> : <code class="type">'a list -> 'b list -> ('a * 'b) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">cartesian_product l1 l2</code> is a list of coordinates generated from the 
+    cartesian product of two lists of <code class="code">l1</code> and <code class="code">l2</code>.</p>
+</div>
+</div>
+
+<pre><span id="VAL(--)"><span class="keyword">val</span> (--)</span> : <code class="type">int -> int -> int list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">i -- j</code> is the list of integers from <code class="code">i</code> to <code class="code">j</code>, inclusive.</p>
+</div>
+</div>
+
+<pre><span id="VALnext_possible_moves"><span class="keyword">val</span> next_possible_moves</span> : <code class="type"><a href="State.html#TYPEt">State.t</a> -> (int * int) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">next_possible_moves gm</code> is a list of possible coordinates the AI can 
+    move to given current game <code class="code">gm</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALnext_possible_states"><span class="keyword">val</span> next_possible_states</span> : <code class="type"><a href="Monte.html#TYPEtree">tree</a> -> <a href="Monte.html#TYPEtree">tree</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">next_possible_states n</code> is a list of the next possible states the game can
+    transition to given the current state <code class="code">n</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALrandom_move"><span class="keyword">val</span> random_move</span> : <code class="type"><a href="State.html#TYPEt">State.t</a> -> int * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">random_move gm</code> is a random coordinate for the AI to move given the current
+    state of the game <code class="code">gm</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_children"><span class="keyword">val</span> get_children</span> : <code class="type"><a href="Monte.html#TYPEtree">tree</a> -> <a href="Monte.html#TYPEtree">tree</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_children n</code> is the list of children of node <code class="code">n</code>. 
+    Requires: <code class="code">n</code> is not <code class="code">Leaf</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALselect"><span class="keyword">val</span> select</span> : <code class="type"><a href="Monte.html#TYPEtree">tree</a> -> <a href="Monte.html#TYPEtree">tree</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">select n</code> is the child of node <code class="code">n</code> with the highest upper confidence bound. 
+    Requires: <code class="code">n</code> is not <code class="code">Leaf</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALexpand"><span class="keyword">val</span> expand</span> : <code class="type"><a href="Monte.html#TYPEtree">tree</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">expand n</code> sets the children of node <code class="code">n</code> to all possible subsequent moves.
+    Requires: <code class="code">n</code> is not <code class="code">Leaf</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_game"><span class="keyword">val</span> get_game</span> : <code class="type"><a href="Monte.html#TYPEtree">tree</a> -> <a href="State.html#TYPEt">State.t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_game n</code> is the current game state at node <code class="code">n</code>. 
+    Requires: <code class="code">n</code> is not <code class="code">Leaf</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALsimulation_node"><span class="keyword">val</span> simulation_node</span> : <code class="type"><a href="Monte.html#TYPEtree">tree</a> -> <a href="Monte.html#TYPEtree">tree</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">simulation_node n</code> is the node that the AI runs the simulation on given 
+    root node <code class="code">n</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALsimulate"><span class="keyword">val</span> simulate</span> : <code class="type"><a href="Monte.html#TYPEtree">tree</a> -> <a href="Board.html#TYPEsquare">Board.square</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">simulate n</code> is the winner after running a random simulated game on node 
+    <code class="code">n</code>.
+    Requires: <code class="code">n</code> is not <code class="code">Leaf</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALupdate_win"><span class="keyword">val</span> update_win</span> : <code class="type">float Pervasives.ref -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">update_win w</code> updates the winning score.</p>
+</div>
+</div>
+
+<pre><span id="VALupdate_visit"><span class="keyword">val</span> update_visit</span> : <code class="type">float Pervasives.ref -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">update_visit v</code> updates the number of visits.</p>
+</div>
+</div>
+
+<pre><span id="VALbackpropagate"><span class="keyword">val</span> backpropagate</span> : <code class="type"><a href="Monte.html#TYPEtree">tree</a> -> <a href="Board.html#TYPEsquare">Board.square</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">backpropagate n sq</code> updates the winning score and number of visits for 
+    each node given node <code class="code">n</code> and winning player <code class="code">sq</code>. 
+    Requires: <code class="code">n</code> is not <code class="code">Leaf</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALnext_coords"><span class="keyword">val</span> next_coords</span> : <code class="type"><a href="Monte.html#TYPEtree">tree</a> -> int * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">next_coords n</code> is the coordinate of the move to reach the state in node <code class="code">n</code>
+    from the state in the parent node of <code class="code">n</code>. 
+    Requires: <code class="code">n</code> is not <code class="code">Leaf</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALnext_move"><span class="keyword">val</span> next_move</span> : <code class="type"><a href="State.html#TYPEt">State.t</a> -> int * int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">next_move ()</code> is the next optimal move for the AI.</p>
+</div>
+</div>
+</body></html>

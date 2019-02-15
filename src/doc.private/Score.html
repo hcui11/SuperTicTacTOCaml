@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Play.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Board" rel="Chapter" href="Board.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="UI_messages" rel="Chapter" href="UI_messages.html">
+<link title="Monte" rel="Chapter" href="Monte.html">
+<link title="RandomAI" rel="Chapter" href="RandomAI.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Score" rel="Chapter" href="Score.html"><title>Score</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Play.html" title="Play">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Score.html">Score</a></h1>
+
+<pre><span id="MODULEScore"><span class="keyword">module</span> Score</span>: <code class="code">sig</code> <a href="Score.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><code><span id="TYPEscore_type"><span class="keyword">type</span> <code class="type"></code>score_type</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTscore_type.TIME"><span class="constructor">TIME</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTscore_type.MOVES"><span class="constructor">MOVES</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">score_type</code> specifies which highscore type will be used</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.name">name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.value">value</span>&nbsp;: <code class="type">float</code>;</code></td>
+
+</tr></table>
+}
+
+
+
+<pre><span id="VALscore_to_string"><span class="keyword">val</span> score_to_string</span> : <code class="type"><a href="Score.html#TYPEscore_type">score_type</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">score_to_string s</code> converts the score_type <code class="code">s</code> to a string</p>
+</div>
+</div>
+
+<pre><span id="VALjson_to_score"><span class="keyword">val</span> json_to_score</span> : <code class="type">Yojson.Basic.json -> <a href="Score.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">json_to_score j</code> converts the json object <code class="code">j</code> to type t</p>
+</div>
+</div>
+
+<pre><span id="VALjson_to_score_list"><span class="keyword">val</span> json_to_score_list</span> : <code class="type">Yojson.Basic.json -> <a href="Score.html#TYPEscore_type">score_type</a> -> <a href="Score.html#TYPEt">t</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">json_to_scor_list j t</code> converts the json object <code class="code">j</code> to type t list
+    based on the score_type <code class="code">t</code></p>
+</div>
+</div>
+
+<pre><span id="VALt_compare"><span class="keyword">val</span> t_compare</span> : <code class="type"><a href="Score.html#TYPEt">t</a> -> <a href="Score.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">t_compare a b</code> returns a negative number when b &gt; a,
+    positive number when a &gt; b, and 0 when a = b</p>
+</div>
+</div>
+
+<pre><span id="VALsort_score_list"><span class="keyword">val</span> sort_score_list</span> : <code class="type"><a href="Score.html#TYPEt">t</a> list -> <a href="Score.html#TYPEt">t</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">sort_score_list s</code> sorts the elements of <code class="code">s</code> in ascending order</p>
+</div>
+</div>
+
+<pre><span id="VALt_to_string"><span class="keyword">val</span> t_to_string</span> : <code class="type"><a href="Score.html#TYPEt">t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">t_to_string t</code> converts the type <code class="code">t</code> to a string</p>
+</div>
+</div>
+
+<pre><span id="VALprint_score"><span class="keyword">val</span> print_score</span> : <code class="type">int -> string -> <a href="Score.html#TYPEscore_type">score_type</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_score s f t</code> prints the first <code class="code">s</code> elements in the json file <code class="code">f</code> based
+    on the score_type <code class="code">t</code>. Prints scores in an ascending order</p>
+
+<p><code class="code">print_score s f t</code> prints the first <code class="code">size</code> elements of the given 
+    json file <code class="code">file</code></p>
+</div>
+</div>
+
+<pre><span id="VALchange_score"><span class="keyword">val</span> change_score</span> : <code class="type"><a href="Score.html#TYPEt">t</a> list -> string -> float -> <a href="Score.html#TYPEt">t</a> list -> <a href="Score.html#TYPEt">t</a> list * bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">change_score s n v acc</code> searches through the list <code class="code">s</code> attempting to find a 
+    value with the same name as <code class="code">n</code>. If the name is found, replace the current 
+    value with <code class="code">v</code> and return the list. If no value is matched, return the 
+    same list</p>
+</div>
+</div>
+
+<pre><span id="VALadd_score"><span class="keyword">val</span> add_score</span> : <code class="type"><a href="Score.html#TYPEt">t</a> list -> string -> float -> <a href="Score.html#TYPEt">t</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">add_score s n v</code> adds a new type t with <code class="code">n</code> and <code class="code">v</code> to <code class="code">s</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_high_score"><span class="keyword">val</span> get_high_score</span> : <code class="type">string -> <a href="State.html#TYPEt">State.t</a> -> <a href="Score.html#TYPEscore_type">score_type</a> -> float</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_high_score f s t</code> gets the score of the player in <code class="code">s</code> from the json 
+    file <code class="code">file</code> based on score_type <code class="code">t</code></p>
+
+<p><code class="code">get_high_scores t len</code> returns the top <code class="code">len</code> high_scores found in t.</p>
+</div>
+</div>
+
+<pre><span id="VALstat_of_stats"><span class="keyword">val</span> stat_of_stats</span> : <code class="type"><a href="State.html#TYPEt">State.t</a> -> <a href="Score.html#TYPEscore_type">score_type</a> -> <a href="Score.html#TYPEt">t</a> option</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">stat_of_stats s p</code> creates a type t option based on the contents of 
+    State.stat in <code class="code">s</code> based on the score_type <code class="code">p</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_stat"><span class="keyword">val</span> get_stat</span> : <code class="type"><a href="Score.html#TYPEt">t</a> option -> <a href="Score.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_stat s</code> converts the t option <code class="code">s</code> to type t</p>
+</div>
+</div>
+
+<pre><span id="VALadd_to_file"><span class="keyword">val</span> add_to_file</span> : <code class="type">string -> Yojson.Basic.json -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">add_to_file f j</code> updates the json file <code class="code">f</code> with the contents of <code class="code">j</code></p>
+</div>
+</div>
+
+<pre><span id="VALassoc_to_json_list"><span class="keyword">val</span> assoc_to_json_list</span> : <code class="type"><a href="Score.html#TYPEt">t</a> list -><br>       [> `Assoc of (string * [> `Float of float | `String of string ]) list ] list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">assox_to_json_list s</code> converts the t list <code class="code">s</code> to a list of json object</p>
+</div>
+</div>
+
+<pre><span id="VALassoc_list_to_json"><span class="keyword">val</span> assoc_list_to_json</span> : <code class="type"><a href="Score.html#TYPEscore_type">score_type</a> -><br>       <a href="Score.html#TYPEt">t</a> list -><br>       [> `Assoc of<br>            (string *<br>             [> `List of<br>                  [> `Assoc of<br>                       (string * [> `Float of float | `String of string ]) list ]<br>                  list ])<br>            list ]</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">assoc_list_to_json t s</code> converts the t list <code class="code">s</code> to a json object based on 
+    the score_type <code class="code">s</code></p>
+</div>
+</div>
+
+<pre><span id="VALupdate_json"><span class="keyword">val</span> update_json</span> : <code class="type">string -> <a href="Score.html#TYPEscore_type">score_type</a> -> <a href="State.html#TYPEt">State.t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">update_json f t s</code> adds the current contents of <code class="code">s</code> to the json file <code class="code">f</code>
+    based on the score_type <code class="code">t</code>. New score is added to the json file <code class="code">f</code> in a
+    sorted order</p>
+
+<p><code class="code">update_json s t state</code> updates the json file <code class="code">s</code> with the current contents
+    of <code class="code">State.stat</code> in <code class="code">state</code> based on <code class="code">t</code></p>
+</div>
+</div>
+</body></html>

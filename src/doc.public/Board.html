@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="next" href="Command.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Board" rel="Chapter" href="Board.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="UI_messages" rel="Chapter" href="UI_messages.html">
+<link title="Monte" rel="Chapter" href="Monte.html">
+<link title="RandomAI" rel="Chapter" href="RandomAI.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Score" rel="Chapter" href="Score.html"><title>Board</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Command.html" title="Command">Next</a>
+</div>
+<h1>Module <a href="type_Board.html">Board</a></h1>
+
+<pre><span id="MODULEBoard"><span class="keyword">module</span> Board</span>: <code class="code">sig</code> <a href="Board.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Governs the game board of an Ultimate Tic Tac TOCaml game.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEsquare"><span class="keyword">type</span> <code class="type"></code>square</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTsquare.X"><span class="constructor">X</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTsquare.O"><span class="constructor">O</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTsquare.Blank"><span class="constructor">Blank</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>The type of squares.</p>
+</div>
+</div>
+
+
+<pre><span id="TYPEboard"><span class="keyword">type</span> <code class="type"></code>board</span> = <code class="type"><a href="Board.html#TYPEsquare">square</a> array</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The type of a 3x3 Tic-Tac-Toe board.</p>
+</div>
+</div>
+
+
+<pre><span id="TYPEgame"><span class="keyword">type</span> <code class="type"></code>game</span> = <code class="type"><a href="Board.html#TYPEboard">board</a> array</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The type of an Ultimate Tic-Tac-Toe game.</p>
+</div>
+</div>
+
+
+<pre><span id="VALblank_board"><span class="keyword">val</span> blank_board</span> : <code class="type">unit -> <a href="Board.html#TYPEboard">board</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>The initialized sub-board full of blanks.</p>
+</div>
+</div>
+
+<pre><span id="VALinitial_game"><span class="keyword">val</span> initial_game</span> : <code class="type">unit -> <a href="Board.html#TYPEgame">game</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>The initialized game full of blanks.</p>
+</div>
+</div>
+
+<pre><span id="VALindex_of_coordinate"><span class="keyword">val</span> index_of_coordinate</span> : <code class="type">int -> int -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">index_of_coordinate x y</code> is the index of the coordinate <code class="code">(x,y)</code> in a 
+    game.</p>
+</div>
+</div>
+
+<pre><span id="VALboard_of_coordinate"><span class="keyword">val</span> board_of_coordinate</span> : <code class="type">int -> int -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">board_of_coordinate x y</code> is the board that <code class="code">(x, y)</code> is located in.</p>
+</div>
+</div>
+
+<pre><span id="VALset_game_square"><span class="keyword">val</span> set_game_square</span> : <code class="type"><a href="Board.html#TYPEgame">game</a> -> int -> int -> int -> <a href="Board.html#TYPEsquare">square</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">set_game_square t x y curr input</code> sets the square at coordinate <code class="code">(x,y)</code> in 
+    a board at index <code class="code">curr</code> in game <code class="code">t</code> to the given input.</p>
+</div>
+</div>
+
+<pre><span id="VALget_game_square"><span class="keyword">val</span> get_game_square</span> : <code class="type"><a href="Board.html#TYPEgame">game</a> -> int -> int -> int -> <a href="Board.html#TYPEsquare">square</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_game_square t x y curr</code> gets the square at coordinate <code class="code">(x,y)</code> in a 
+    board at index <code class="code">curr</code> in game <code class="code">t</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_board"><span class="keyword">val</span> get_board</span> : <code class="type"><a href="Board.html#TYPEgame">game</a> -> int -> <a href="Board.html#TYPEboard">board</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_board gm i</code> gets the board at index <code class="code">i</code> in game <code class="code">gm</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALis_full"><span class="keyword">val</span> is_full</span> : <code class="type"><a href="Board.html#TYPEboard">board</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">is_full bd</code> returns true if the board <code class="code">bd</code> contain <code class="code">Blank</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALset_board_square"><span class="keyword">val</span> set_board_square</span> : <code class="type"><a href="Board.html#TYPEboard">board</a> -> int -> <a href="Board.html#TYPEsquare">square</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">set_board_square bd i in</code> sets the square at index <code class="code">i</code> in a board <code class="code">bd</code> to 
+    value <code class="code">in</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_board_square"><span class="keyword">val</span> get_board_square</span> : <code class="type"><a href="Board.html#TYPEboard">board</a> -> int -> <a href="Board.html#TYPEsquare">square</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_board_square bd i</code> gets the square at index <code class="code">i</code> in a board <code class="code">bd</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALtie_breaker"><span class="keyword">val</span> tie_breaker</span> : <code class="type"><a href="Board.html#TYPEboard">board</a> -> <a href="Board.html#TYPEsquare">square</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">tie_breaker bd</code> breaks ties if <code class="code">bd</code> is full and has no winner. Returns the
+    square value with the majority on the board <code class="code">bd</code>.</p>
+
+<p>Requires: <code class="code">is_full bd = true &amp;&amp; check_win bd = false</code></p>
+</div>
+</div>
+
+<pre><span id="VALcheck_win"><span class="keyword">val</span> check_win</span> : <code class="type"><a href="Board.html#TYPEboard">board</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_win bd</code> returns true if one player has won the board <code class="code">bd</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALother_square"><span class="keyword">val</span> other_square</span> : <code class="type"><a href="Board.html#TYPEsquare">square</a> -> <a href="Board.html#TYPEsquare">square</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">other_square sq</code> returns the opposite square of <code class="code">sq</code>. 
+    Requires: <code class="code">sq</code> cannot be <code class="code">Blank</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_grid"><span class="keyword">val</span> print_grid</span> : <code class="type"><a href="Board.html#TYPEgame">game</a> -> int -> <a href="Board.html#TYPEboard">board</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_grid g curr mini</code> prints game grid <code class="code">g</code> with currently selected board
+    <code class="code">curr</code> along with associated mini-board <code class="code">mini</code> to the console.</p>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="State.html">
+<link rel="next" href="Monte.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Board" rel="Chapter" href="Board.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="UI_messages" rel="Chapter" href="UI_messages.html">
+<link title="Monte" rel="Chapter" href="Monte.html">
+<link title="RandomAI" rel="Chapter" href="RandomAI.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Score" rel="Chapter" href="Score.html"><title>UI_messages</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="State.html" title="State">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Monte.html" title="Monte">Next</a>
+</div>
+<h1>Module <a href="type_UI_messages.html">UI_messages</a></h1>
+
+<pre><span id="MODULEUI_messages"><span class="keyword">module</span> UI_messages</span>: <code class="code">sig</code> <a href="UI_messages.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Printed messages for the user interface.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="VALprint_direction"><span class="keyword">val</span> print_direction</span> : <code class="type">string -> unit</code></pre>
+<pre><span id="VALprint_welcome_msg"><span class="keyword">val</span> print_welcome_msg</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints a welcome message (with welcome art).</p>
+</div>
+</div>
+
+<pre><span id="VALprint_scoreboard"><span class="keyword">val</span> print_scoreboard</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints the scoreboard.</p>
+</div>
+</div>
+
+<pre><span id="VALcurr_player_str"><span class="keyword">val</span> curr_player_str</span> : <code class="type"><a href="Board.html#TYPEsquare">Board.square</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">curr_player_str s</code> returns a string representation of a player <code class="code">s</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALprompt_for_coordinates"><span class="keyword">val</span> prompt_for_coordinates</span> : <code class="type"><a href="Board.html#TYPEsquare">Board.square</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints a prompt message for the user to enter coordinates to mark.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_help"><span class="keyword">val</span> print_help</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints a help message.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_err"><span class="keyword">val</span> print_err</span> : <code class="type">string -> unit</code></pre>
+<pre><span id="VALprint_invalid_index_error_msg"><span class="keyword">val</span> print_invalid_index_error_msg</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints an error message for invalid coordinates.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_empty_error_msg"><span class="keyword">val</span> print_empty_error_msg</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints an error message for an empty player input.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_malformed_error_msg"><span class="keyword">val</span> print_malformed_error_msg</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints an error message for a malformed command.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_reset_disabled_msg"><span class="keyword">val</span> print_reset_disabled_msg</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints an error message for a player attempting to reset the board in a
+    networked game.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_connection_failed_msg"><span class="keyword">val</span> print_connection_failed_msg</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints an error message for a failed connection to the given IP address.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_win_msg"><span class="keyword">val</span> print_win_msg</span> : <code class="type"><a href="Board.html#TYPEsquare">Board.square</a> -> bool -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints a win message for the player <code class="code">p</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_highscore"><span class="keyword">val</span> print_highscore</span> : <code class="type">string -> <a href="Score.html#TYPEscore_type">Score.score_type</a> -> <a href="State.html#TYPEt">State.t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_highscore f s t</code> prints the highest score of the current player in
+    <code class="code">t</code> obtained from the file <code class="code">f</code>. <code class="code">s</code> signifies the score type</p>
+</div>
+</div>
+
+<pre><span id="VALprint_timeout_msg"><span class="keyword">val</span> print_timeout_msg</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Prints a win message if the opponent times out.</p>
+</div>
+</div>
+</body></html>

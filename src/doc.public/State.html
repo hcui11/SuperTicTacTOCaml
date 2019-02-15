@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Main.html">
+<link rel="next" href="UI_messages.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Board" rel="Chapter" href="Board.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="UI_messages" rel="Chapter" href="UI_messages.html">
+<link title="Monte" rel="Chapter" href="Monte.html">
+<link title="RandomAI" rel="Chapter" href="RandomAI.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Score" rel="Chapter" href="Score.html"><title>State</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Main.html" title="Main">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="UI_messages.html" title="UI_messages">Next</a>
+</div>
+<h1>Module <a href="type_State.html">State</a></h1>
+
+<pre><span id="MODULEState"><span class="keyword">module</span> State</span>: <code class="code">sig</code> <a href="State.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Governs the game state.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing the game state.</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEstat"><span class="keyword">type</span> <code class="type"></code>stat</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstat.name">name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTstat.moves">moves</span>&nbsp;: <code class="type">float</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span class="keyword">mutable&nbsp;</span><span id="TYPEELTstat.time">time</span>&nbsp;: <code class="type">float</code>;</code></td>
+
+</tr></table>
+}
+
+
+
+<pre><span id="EXCEPTIONInvalid_Move"><span class="keyword">exception</span> Invalid_Move</span></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Raised when attempting an invalid move.</p>
+</div>
+</div>
+
+<pre><span id="VALgame_state"><span class="keyword">val</span> game_state</span> : <code class="type"><a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>The current game state.</p>
+</div>
+</div>
+
+<pre><span id="VALget_stats"><span class="keyword">val</span> get_stats</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="State.html#TYPEstat">stat</a> list</code></pre>
+<pre><span id="VALcreate_state"><span class="keyword">val</span> create_state</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">create_state t</code> is a copy of the current game state.</p>
+</div>
+</div>
+
+<pre><span id="VALreset_game"><span class="keyword">val</span> reset_game</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">reset_game t</code> restores the game <code class="code">t</code> to its default values, essentially
+    resetting the game.</p>
+</div>
+</div>
+
+<pre><span id="VALplayer_move"><span class="keyword">val</span> player_move</span> : <code class="type">int -> int -> <a href="State.html#TYPEt">t</a> -> bool -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">player_move x y t b</code> changes the game <code class="code">t</code> to represent a player marking a
+    coordinate <code class="code">(x, y)</code> with <code class="code">X</code> or <code class="code">O</code>. <code class="code">b</code> is false for the AI and true for
+    player.
+    Raises <code class="code">Invalid_Move</code> if the player cannot mark coordinate <code class="code">(x,y)</code></p>
+</div>
+</div>
+
+<pre><span id="VALcurr_board"><span class="keyword">val</span> curr_board</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">curr_board t</code> is the index of the current board in the state of the game
+    <code class="code">t</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALcurr_player"><span class="keyword">val</span> curr_player</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="Board.html#TYPEsquare">Board.square</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">curr_player t</code> is the current player making their move in the state of the
+    game <code class="code">t</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_big_board"><span class="keyword">val</span> get_big_board</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="Board.html#TYPEgame">Board.game</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_big_board t</code> is the current board in the state of the game <code class="code">t</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_small_board"><span class="keyword">val</span> get_small_board</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="Board.html#TYPEboard">Board.board</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_small_board t</code> is a smaller board that represents winners of sub-boards
+    in the state of the game <code class="code">t</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALinitialize_stats"><span class="keyword">val</span> initialize_stats</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string -> unit</code></pre>
+<pre><span id="VALget_name"><span class="keyword">val</span> get_name</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string</code></pre></body></html>
